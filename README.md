@@ -6,3 +6,5 @@ git clone https://github.com/mayufo/react-demo.git
 yarn
 yarn start
 ```
+
+http://localhost:3000/
