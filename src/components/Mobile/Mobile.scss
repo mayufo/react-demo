@@ -1,0 +1,66 @@
+html {
+  font-size: 50px;
+}
+
+$blue: #2db7f5;
+
+@mixin multiEllipsis($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical; // 从上向下垂直排列子元素。设置或检索伸缩盒对象的子元素的排列方式 。
+  text-overflow: ellipsis; //文本溢出 用省略号显示
+  -webkit-line-clamp: $line; // 多少行省略
+  overflow: hidden;
+  word-break: break-all;
+}
+
+
+.mobile {
+  flex: 1;
+  background: #f6f6f6;
+  header {
+    border-bottom: 1px solid $blue;
+    i {
+      font-size: 30px;
+      margin-left: 10px;
+    }
+    span {
+      font-size: 35px;
+      vertical-align: top;
+      padding-left: 10px;
+      color: $blue;
+    }
+  }
+}
+
+.carouselItem {
+  height: 300px;
+  background: pink;
+}
+
+.newItem {
+  background: #f6f6f6;
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  img {
+    width: 120px;
+    height: 90px;
+  }
+  p {
+    width: calc(100vw - 170px);
+    @include multiEllipsis(2);
+    height: 42px;
+  }
+}
+
+.newItemType{
+  color: red;
+  margin-right: 10px;
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.footerText {
+  text-align: center;
+}

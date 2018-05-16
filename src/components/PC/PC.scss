@@ -1,0 +1,56 @@
+$blue: #2db7f5;
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerLogo {
+  i {
+    font-size: 30px;
+  }
+  span {
+    margin-left: 6px;
+    color: $blue;
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+.footerText {
+  text-align: center;
+}
+
+.contentWrap {
+  margin: 5px 0;
+}
+.carouselItem {
+  background: pink;
+  height: 303px;
+}
+
+.newImage {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  li {
+    list-style: none;
+    width: 123px;
+    margin-right: 18px;
+
+    img {
+      width: 123px;
+    }
+
+    h3 {
+      @include ellipsis;
+    }
+    p{
+      text-align: center;
+      margin: 0;
+    }
+  }
+}

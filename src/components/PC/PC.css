@@ -1,0 +1,38 @@
+.headerLogo i {
+  font-size: 30px; }
+
+.headerLogo span {
+  margin-left: 6px;
+  color: #2db7f5;
+  font-weight: 600;
+  font-size: 24px; }
+
+.footerText {
+  text-align: center; }
+
+.contentWrap {
+  margin: 5px 0; }
+
+.carouselItem {
+  background: pink;
+  height: 303px; }
+
+.newImage {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0; }
+  .newImage li {
+    list-style: none;
+    width: 123px;
+    margin-right: 18px; }
+    .newImage li img {
+      width: 123px; }
+    .newImage li h3 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .newImage li p {
+      text-align: center;
+      margin: 0; }
