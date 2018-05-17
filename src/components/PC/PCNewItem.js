@@ -1,6 +1,8 @@
 import React from 'react'
 import {Card} from 'antd'
 import { news } from '@/server/getData'
+import style from './PC.css'
+import {Link} from 'react-router-dom'
 
 
 export default class PCNewItem extends React.Component {
@@ -19,15 +21,16 @@ export default class PCNewItem extends React.Component {
 
     }
     render () {
-        console.log(this.state.news)
         const newsList = this.state.news.length ?
             this.state.news.map((newsItem, index) => (
                 <li key={index}>
-                    {newsItem.title}
+                    <Link to={`detail/${newsItem.uniquekey}`}>
+                        {newsItem.title}
+                    </Link>
                 </li>
             )):'没有加载到新闻'
         return (
-            <div>
+            <div className={style.newItem}>
                 <Card title={this.props.title} bordered={this.props.border}>
                     <ul>
                         {newsList}

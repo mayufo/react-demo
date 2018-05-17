@@ -10,3 +10,9 @@ export const news = (type, count, action) => http.get('/Handler.ashx?', {
     count,
     action
 })
+
+
+export const newsItem = (action, uniquekey) => http.get('/Handler.ashx?', {
+    action,
+    uniquekey
+})

@@ -1,10 +1,10 @@
 import React from 'react'
 import {Row, Col, Menu, Icon, Button} from 'antd'
 import style from './PC.css'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 import LoginModal from '../LoginModal'
-import { inject, observer } from 'mobx-react';
+import { inject } from 'mobx-react';
 
 @inject(({userInfo}) => ({
     login: userInfo.login,

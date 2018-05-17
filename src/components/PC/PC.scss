@@ -29,7 +29,21 @@ $blue: #2db7f5;
   background: pink;
   height: 303px;
 }
+.newItem {
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
 
+  a {
+    color: #222222;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
 .newImage {
   padding: 0;
   display: flex;
@@ -51,6 +65,7 @@ $blue: #2db7f5;
     p{
       text-align: center;
       margin: 0;
+      color: #9c9a9a;
     }
   }
 }

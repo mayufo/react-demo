@@ -1,16 +1,12 @@
 import React from 'react'
 import {Row, Col, Carousel, Tabs} from 'antd'
 import style from './PC.css'
-import {Link} from 'react-router-dom'
 import PCNewItem from './PCNewItem'
 import PCNewImage from './PCNewImage'
 const TabPane = Tabs.TabPane;
 
 
 export default class PCContent extends React.Component {
-    constructor() {
-        super()
-    }
     render() {
         return (
             <div className={style.contentWrap}>

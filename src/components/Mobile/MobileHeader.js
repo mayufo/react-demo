@@ -1,11 +1,10 @@
 import React from 'react'
 import {Icon} from 'antd'
-import {Link} from 'react-router-dom'
 
 import style from './Mobile.css'
 
 import LoginModal from '../LoginModal'
-import { inject, observer } from 'mobx-react';
+import { inject } from 'mobx-react';
 
 @inject(({userInfo}) => ({
     login: userInfo.login,

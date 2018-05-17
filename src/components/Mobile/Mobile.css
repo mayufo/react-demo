@@ -19,15 +19,15 @@ html {
   height: 300px;
   background: pink; }
 
-.newItem {
+.newItem a {
   background: #f6f6f6;
   display: flex;
   margin-bottom: 10px;
   justify-content: space-around; }
-  .newItem img {
+  .newItem a img {
     width: 120px;
     height: 90px; }
-  .newItem p {
+  .newItem a p {
     width: calc(100vw - 170px);
     display: -webkit-box;
     -webkit-box-orient: vertical;

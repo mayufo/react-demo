@@ -1,8 +1,6 @@
 import React from 'react';
 import { Modal, Tabs, Form, Input, Button } from 'antd'
-
-
-import { inject, observer } from 'mobx-react';
+import { inject } from 'mobx-react';
 import { login } from '@/server/getData'
 const TabPane = Tabs.TabPane;
 const FormItem = Form.Item;
@@ -14,13 +12,10 @@ const FormItem = Form.Item;
 }))
 
 export default class LoginModal extends React.Component {
-
-    changeTab(e) {
-        console.log(e);
-    }
     async loginSubmit(e) {
         e.preventDefault()
         let res = await login('userName', 'passWord')
+        console.log(res);
         this.props.login('mayufo', '12345')
     }
     render () {
@@ -34,7 +29,7 @@ export default class LoginModal extends React.Component {
                       key="false"
                       cancelText="取消"
                       okText="关闭">
-                   <Tabs defaultActiveKey="login" onChange={ this.changeTab.bind(this) }>
+                   <Tabs defaultActiveKey="login">
                        <TabPane tab="登录" key="login">
                            <Form horizontal="true" onSubmit={this.loginSubmit.bind(this)}>
                                <FormItem label="账户">

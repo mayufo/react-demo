@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {Row, Col, Card} from 'antd'
+import {Row, Col} from 'antd'
 import style from './Mobile.css'
 import { news } from '@/server/getData'
+
+import {Link} from 'react-router-dom'
 
 class MobileNewItem extends Component {
     constructor() {
@@ -20,16 +22,16 @@ class MobileNewItem extends Component {
     render() {
         const newsList = this.state.news.length ? this.state.news.map((newsItem, index) => (
             <li key={index} className={style.newItem}>
-                <img src={newsItem.thumbnail_pic_s} alt=""/>
-                <div>
-                    <p>{newsItem.title}</p>
+                <Link to={`/detail/${newsItem.uniquekey}`}>
+                    <img src={newsItem.thumbnail_pic_s} alt=""/>
                     <div>
-                        <span className={style.newItemType}>{newsItem.realtype}</span>
-                        <span>{newsItem.date}</span>
+                        <p>{newsItem.title}</p>
+                        <div>
+                            <span className={style.newItemType}>{newsItem.realtype}</span>
+                            <span>{newsItem.date}</span>
+                        </div>
                     </div>
-                </div>
-
-
+                </Link>
             </li>
         )):'正在加载';
         return (

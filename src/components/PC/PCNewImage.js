@@ -1,6 +1,8 @@
 import React from 'react'
 import {Card} from 'antd'
 import { news } from '@/server/getData'
+import {Link} from 'react-router-dom'
+
 import style from './PC.css'
 
 export default class PCNewImage extends React.Component {
@@ -22,13 +24,15 @@ export default class PCNewImage extends React.Component {
         const newsList = this.state.news.length ?
             this.state.news.map((newsItem, index) => (
                 <li key={index}>
-                    <div>
-                        <img src={newsItem.thumbnail_pic_s} alt=""/>
-                    </div>
-                    <div>
-                        <h3>{newsItem.title}</h3>
-                        <p>{newsItem.author_name}</p>
-                    </div>
+                    <Link to={`/detail/${newsItem.uniquekey}`}>
+                        <div>
+                            <img src={newsItem.thumbnail_pic_s} alt=""/>
+                        </div>
+                        <div>
+                            <h3>{newsItem.title}</h3>
+                            <p>{newsItem.author_name}</p>
+                        </div>
+                    </Link>
                 </li>
             )):'没有加载到新闻'
         return (
