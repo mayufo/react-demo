@@ -15,7 +15,6 @@ export default class LoginModal extends React.Component {
     async loginSubmit(e) {
         e.preventDefault()
         let res = await login('userName', 'passWord')
-        console.log(res);
         this.props.login('mayufo', '12345')
     }
     render () {
