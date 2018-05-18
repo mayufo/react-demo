@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a50d57a5-ae3c-4950-8aa4-98623aea77ca" name="Default" comment="增加新闻详情页面&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/react-demo-mobile.gif" />
+    <list default="true" id="a50d57a5-ae3c-4950-8aa4-98623aea77ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/LoginModal.js" afterPath="$PROJECT_DIR$/src/components/LoginModal.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -56,7 +54,7 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="180">
+                  <first_editor relative-caret-position="195">
                     <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
                     <folding />
                   </first_editor>
@@ -426,7 +424,7 @@
       <workItem from="1525337812488" duration="45016000" />
       <workItem from="1525921747821" duration="8246000" />
       <workItem from="1525938809525" duration="71431000" />
-      <workItem from="1526547704395" duration="8580000" />
+      <workItem from="1526547704395" duration="8928000" />
     </task>
     <task id="LOCAL-00001" summary="增加新闻详情页面&#10;">
       <created>1526571185753</created>
@@ -435,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526571185753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加新闻详情页面&#10;">
+      <created>1526614632542</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526614632542</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133273000" />
+    <option name="totallyTimeSpent" value="133621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -921,7 +926,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="180">
+          <first_editor relative-caret-position="195">
             <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
             <folding />
           </first_editor>
